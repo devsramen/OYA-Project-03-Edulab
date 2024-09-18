@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+:root{
+    --default: #81838C;
+    --primary: #3C50E0;
+    --secondary: #6483F6;
+    --footer: #07003B;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--default)
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.dFlex{
+    display: flex;
+}
+.btnFlex{
+    display: inline-flex;
+}
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.btn{
+    border: 1px solid transparent;
+    padding: 17px 36px;
+    border-radius: 29px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+}
+/* Common CSS End */
+/* NAV Start */
+#nav{
+    width: 100%;
+    background-color: #3C50E0;
+    color: #fff;
+    padding: 35px 0 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+#nav .dFlex{
+    justify-content: space-between;
+    align-items: center;
+}
+#nav .logo{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.menu{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 44px;
+}
+.menu ul{
+    display: inline-flex;
+    color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 38px;
+}
+.menu .btn{
+    font-weight: 700;
+    border-color: #fff;
+}
+/* NAV end */
+/* Banner Start */
+#banner{
+    background-color: #3C50E0;
+    color: #fff;
+    padding: 200px 0 100px;
+    position: relative;
+}
+.bannerWrapper{
+    position: relative;
+    z-index: 2;
+}
+.bannIll{
+    width: 1370px;
+    margin: 0 auto;
+    height: 10px;
+    position: relative;
+}
+.bannerIllustrationBig {
+    position: absolute;
+    bottom: -52px;
+    right: -60px;
+    z-index: 1;
+}
+.bannerIllustrationSmall{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+#banner .dFlex{
+    justify-content: space-between;
+}
+#banner h1{
+    width: 548px;
+    font-size: 72px;
+    line-height: 80px;
+    margin-top: 50px;
+}
+#banner p{
+    width: 414px;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.8);;
+    margin: 24px 0 36px;
+}
+#banner .btnFlex{
+    column-gap: 28px;
+}
+#banner .btn{
+    border-color: rgb(255, 255, 255);
+}
+#banner .btn:hover{
+    border-color: #FDB400;
+    background-color: #FDB400;
+}
+#banner .btn.active{
+    border-color: #FDB400;
+    background-color: #FDB400;
+    color: #0703f5;
+    
+}
+#banner .right img{
+    margin-right: -50px;
+}
+/* Banner End */
+/* Checker Start */
+#checker{
+    background-color: #fff;
+    padding: 80px 0;
+}
+#checker .dFlex{
+    justify-content: space-between;
+}
+#checker .item{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 25px;
+}
+#checker .item i{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid var(--default);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#checker .item h2{
+    line-height: 20px;
+    font-weight: 700;
+    color: #0D152E;
+}
+#checker .item p{
+    width: 255px;
+    line-height: 28px;
+    margin-top: 27px;
+    color: #242424;
+}
+/* Checker end */
+/* Featured Lessons Stt */
+#featured{
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #EBF3FF;
+    position: relative;
+    border: 1px solid red;
+}
+.whiteBG{
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.featuredWrapper{
+    position: relative;
+    z-index: 2;
+}
+.featuredWrapper .dFlex{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+.featuredWrapper .dFlex h2{
+    font-size: 34px;
+    font-weight: 700;
+    color: #0D152E;
+    padding-left: 30px;
+}
+.arrows{
+    padding-right: 30px;
+}
+.arrows i{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #707070;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.arrows i:last-child{
+    margin-left: 5px;
+    color: #101C3D;
+    border-color: #101C3D;
+}
+.cardWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+#featured .card{
+    width: 350px;
+    height: 418px;
+    padding: 25px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#featured .card img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#featured .card .cardHead{
+    padding-bottom: 25px;
+}
+#featured .card .cardBody .feaPar1{
+    font-size: 14px;
+    font-weight: 700;
+    /* color: #416FF4; */
+    color: #0703f5;
+    letter-spacing: -0.46px;
+}
+#featured .card .cardBody .feaPar2{
+    /* color: #2BD67B; */
+    font-weight: 700;
+    color: #0703f5;
+}
+#featured .card .cardBody .feaPar3{
+    /* color: #F7B26D; */
+    font-weight: 700;
+    color: #0703f5;
+}
+#featured .card .cardBody h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.66px;
+    color: #0D152E;
+    margin: 10px 0 20px;
+}
+#featured .card .cardBody .dFlex{
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 30px;
+}
+#featured .card .cardBody .dFlex span i{
+    margin-right: 10px;
+}
+#featured .card .cardBody .dFlex span span{
+    color: #0703f5;
+}
+#featured .featBtnWrapper {
+    text-align: center;
+    margin-top: 70px;
+}
+#featured .featBtnWrapper .btn{
+    color: #fff;
+    background-color: var(--primary);
+}
+#featured .featBtnWrapper .btn:hover{
+    background-color: var(--secondary);
+}
+
+/* Featured Lessons end */
