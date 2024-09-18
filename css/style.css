@@ -88,6 +88,10 @@ ul,ol{
     font-weight: 700;
     border-color: #fff;
 }
+.menu .btn:hover{
+    border-color: #0703f5;
+    background-color: #0703f5;
+}
 /* NAV end */
 /* Banner Start */
 #banner{
@@ -256,6 +260,7 @@ ul,ol{
     width: 350px;
     height: 418px;
     padding: 25px;
+    background-color: #fff;
     border: 1px solid #E5E5E5;
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
@@ -323,5 +328,73 @@ ul,ol{
 #featured .featBtnWrapper .btn:hover{
     background-color: var(--secondary);
 }
-
 /* Featured Lessons end */
+/* Career Start */
+#career{
+    padding: 80px 0;
+    background-color: #fff;
+}
+#career .dFlex{
+    justify-content: space-between;
+}
+#career .right h2{
+    width: 572px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #0D152E;
+    margin-bottom: 24px;
+}
+#career .right p{
+    width: 482px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -0.66px;
+    margin-bottom: 58px;
+    color: #07003B; /*will be delete*/
+}
+#career .right ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 22px;
+    margin-bottom: 31px;
+}
+#career .right ul li:last-child{
+    margin-bottom: inherit;
+}
+#career .right ul li i{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    color: #0D152E;
+    border: 1px solid #81838C;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.2);
+}
+#career .right ul li h3{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.66px;
+    color: #0D152E;
+}
+#career .right ul li p{
+    color: #07003B;
+    margin-top: 21px;
+    margin-bottom: inherit;
+}
+#career .right .btn{
+    color: #fff;
+    background-color: #3C50E0;
+    margin-top: 55px;
+}
+/* Career end */
